@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Print 2_D array</title>
+</head>
+<h3>Print 2-D Array</h3>
+<p id="array"></p>
+<p id="result"></p>
+<body>
+<script>
+    var a=[[1,2,1,24],[8,11,9,4],[7,0,7,27],[7,4,28,14],[3,10,26,7]];
+    var data="";
+    for (var array in a){
+        // console.log("row"+ array+"<br/>")
+        data+="row "+array+"<br/>"
+        for (var element in a[array]){
+            // console.log(" "+a[array][element]);
+            data+=" "+a[array][element]+"<br>";
+        }
+    }
+    document.getElementById("array").innerHTML=data;
+
+</script>
+</body>
+</html>
